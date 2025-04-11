@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Quizz App</title>
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Knowledge Quiz</h1>
+    <p class="subtitle">Test your understanding of fundamental JavaScript concepts</p>
+  </header>
+
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+      </div>
+      <span class="question-counter" id="question-counter">1/5</span>
+      <h2 id="question">What is the correct way to declare a variable in JavaScript that cannot be reassigned?</h2>
+    </div>
+
+    <div class="quiz-body">
+      <div class="options" id="options">
+        <!-- Options will be inserted here by JavaScript -->
+      </div>
+      <button class="btn" id="next-btn" disabled>Next Question</button>
+    </div>
+
+    <div class="result-container" id="result-container">
+      <div class="result-icon" id="result-icon"></div>
+      <h2 class="score-text" id="score-text"></h2>
+      <p class="feedback" id="feedback"></p>
+      <button class="btn restart-btn" id="restart-btn">Take Quiz Again</button>
+    </div>
+  </div>
+  <script src="/index.js"></script>
+</body>
+
+</html>
